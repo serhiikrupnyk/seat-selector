@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Малювання кружочків</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 500px;
+            height: 500px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        #canvas {
+            background-color: #fff;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body>
+    <button id="openModal">Відкрити модальне вікно</button>
+    <div class="modal" id="modal">
+        <canvas id="canvas"></canvas>
+        <button id="eraser">Ластик</button>
+        <button id="redBrush">Червона кисть</button>
+        <button id="blueBrush">Синя кисть</button>
+        <button class="close-modal">Закрити</button>
+    </div>
+    <script src="plugin.js"></script>
+</body>
+</html>
